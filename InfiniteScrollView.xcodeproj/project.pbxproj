@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BC52041139B3BD30057DA66 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC52040139B3BD30057DA66 /* UIKit.framework */; };
+		1BC52043139B3BD30057DA66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC52042139B3BD30057DA66 /* Foundation.framework */; };
+		1BC52045139B3BD30057DA66 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC52044139B3BD30057DA66 /* CoreGraphics.framework */; };
+		1BC5204B139B3BD40057DA66 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1BC52049139B3BD40057DA66 /* InfoPlist.strings */; };
+		1BC5204E139B3BD40057DA66 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC5204D139B3BD40057DA66 /* main.m */; };
+		1BC52051139B3BD40057DA66 /* InfiniteScrollViewAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC52050139B3BD40057DA66 /* InfiniteScrollViewAppDelegate.m */; };
+		1BC52055139B3BD40057DA66 /* InfiniteScrollViewAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC52054139B3BD40057DA66 /* InfiniteScrollViewAppDelegate_iPhone.m */; };
+		1BC52058139B3BD40057DA66 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BC52056139B3BD40057DA66 /* MainWindow_iPhone.xib */; };
+		1BC5205C139B3BD40057DA66 /* InfiniteScrollViewAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC5205B139B3BD40057DA66 /* InfiniteScrollViewAppDelegate_iPad.m */; };
+		1BC5205F139B3BD40057DA66 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BC5205D139B3BD40057DA66 /* MainWindow_iPad.xib */; };
+		1BC52066139B3BD40057DA66 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC52040139B3BD30057DA66 /* UIKit.framework */; };
+		1BC52067139B3BD40057DA66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC52042139B3BD30057DA66 /* Foundation.framework */; };
+		1BC52068139B3BD40057DA66 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC52044139B3BD30057DA66 /* CoreGraphics.framework */; };
+		1BC52070139B3BD40057DA66 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1BC5206E139B3BD40057DA66 /* InfoPlist.strings */; };
+		1BC52073139B3BD40057DA66 /* InfiniteScrollViewTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 1BC52072139B3BD40057DA66 /* InfiniteScrollViewTests.h */; };
+		1BC52075139B3BD40057DA66 /* InfiniteScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC52074139B3BD40057DA66 /* InfiniteScrollViewTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1BC52069139B3BD40057DA66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BC52033139B3BD30057DA66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BC5203B139B3BD30057DA66;
+			remoteInfo = InfiniteScrollView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1BC5203C139B3BD30057DA66 /* InfiniteScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfiniteScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BC52040139B3BD30057DA66 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1BC52042139B3BD30057DA66 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1BC52044139B3BD30057DA66 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1BC52048139B3BD40057DA66 /* InfiniteScrollView-Info.plist */ = {isa = PBXFileReference; path = "InfiniteScrollView-Info.plist"; sourceTree = "<group>"; };
+		1BC5204A139B3BD40057DA66 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1BC5204C139B3BD40057DA66 /* InfiniteScrollView-Prefix.pch */ = {isa = PBXFileReference; path = "InfiniteScrollView-Prefix.pch"; sourceTree = "<group>"; };
+		1BC5204D139B3BD40057DA66 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1BC5204F139B3BD40057DA66 /* InfiniteScrollViewAppDelegate.h */ = {isa = PBXFileReference; path = InfiniteScrollViewAppDelegate.h; sourceTree = "<group>"; };
+		1BC52050139B3BD40057DA66 /* InfiniteScrollViewAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfiniteScrollViewAppDelegate.m; sourceTree = "<group>"; };
+		1BC52053139B3BD40057DA66 /* InfiniteScrollViewAppDelegate_iPhone.h */ = {isa = PBXFileReference; name = InfiniteScrollViewAppDelegate_iPhone.h; path = iPhone/InfiniteScrollViewAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		1BC52054139B3BD40057DA66 /* InfiniteScrollViewAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = InfiniteScrollViewAppDelegate_iPhone.m; path = iPhone/InfiniteScrollViewAppDelegate_iPhone.m; sourceTree = "<group>"; };
+		1BC52057139B3BD40057DA66 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
+		1BC5205A139B3BD40057DA66 /* InfiniteScrollViewAppDelegate_iPad.h */ = {isa = PBXFileReference; name = InfiniteScrollViewAppDelegate_iPad.h; path = iPad/InfiniteScrollViewAppDelegate_iPad.h; sourceTree = "<group>"; };
+		1BC5205B139B3BD40057DA66 /* InfiniteScrollViewAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = InfiniteScrollViewAppDelegate_iPad.m; path = iPad/InfiniteScrollViewAppDelegate_iPad.m; sourceTree = "<group>"; };
+		1BC5205E139B3BD40057DA66 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
+		1BC52065139B3BD40057DA66 /* InfiniteScrollViewTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfiniteScrollViewTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BC5206D139B3BD40057DA66 /* InfiniteScrollViewTests-Info.plist */ = {isa = PBXFileReference; path = "InfiniteScrollViewTests-Info.plist"; sourceTree = "<group>"; };
+		1BC5206F139B3BD40057DA66 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1BC52071139B3BD40057DA66 /* InfiniteScrollViewTests-Prefix.pch */ = {isa = PBXFileReference; path = "InfiniteScrollViewTests-Prefix.pch"; sourceTree = "<group>"; };
+		1BC52072139B3BD40057DA66 /* InfiniteScrollViewTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfiniteScrollViewTests.h; sourceTree = "<group>"; };
+		1BC52074139B3BD40057DA66 /* InfiniteScrollViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfiniteScrollViewTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BC52039139B3BD30057DA66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BC52041139B3BD30057DA66 /* UIKit.framework in Frameworks */,
+				1BC52043139B3BD30057DA66 /* Foundation.framework in Frameworks */,
+				1BC52045139B3BD30057DA66 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BC52061139B3BD40057DA66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BC52066139B3BD40057DA66 /* UIKit.framework in Frameworks */,
+				1BC52067139B3BD40057DA66 /* Foundation.framework in Frameworks */,
+				1BC52068139B3BD40057DA66 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BC52031139B3BD30057DA66 = {
+			isa = PBXGroup;
+			children = (
+				1BC52046139B3BD30057DA66 /* InfiniteScrollView */,
+				1BC5206B139B3BD40057DA66 /* InfiniteScrollViewTests */,
+				1BC5203F139B3BD30057DA66 /* Frameworks */,
+				1BC5203D139B3BD30057DA66 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1BC5203D139B3BD30057DA66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BC5203C139B3BD30057DA66 /* InfiniteScrollView.app */,
+				1BC52065139B3BD40057DA66 /* InfiniteScrollViewTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1BC5203F139B3BD30057DA66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BC52040139B3BD30057DA66 /* UIKit.framework */,
+				1BC52042139B3BD30057DA66 /* Foundation.framework */,
+				1BC52044139B3BD30057DA66 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1BC52046139B3BD30057DA66 /* InfiniteScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				1BC5204F139B3BD40057DA66 /* InfiniteScrollViewAppDelegate.h */,
+				1BC52050139B3BD40057DA66 /* InfiniteScrollViewAppDelegate.m */,
+				1BC52052139B3BD40057DA66 /* iPhone */,
+				1BC52059139B3BD40057DA66 /* iPad */,
+				1BC52047139B3BD30057DA66 /* Supporting Files */,
+			);
+			path = InfiniteScrollView;
+			sourceTree = "<group>";
+		};
+		1BC52047139B3BD30057DA66 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1BC52048139B3BD40057DA66 /* InfiniteScrollView-Info.plist */,
+				1BC52049139B3BD40057DA66 /* InfoPlist.strings */,
+				1BC5204C139B3BD40057DA66 /* InfiniteScrollView-Prefix.pch */,
+				1BC5204D139B3BD40057DA66 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1BC52052139B3BD40057DA66 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				1BC52053139B3BD40057DA66 /* InfiniteScrollViewAppDelegate_iPhone.h */,
+				1BC52054139B3BD40057DA66 /* InfiniteScrollViewAppDelegate_iPhone.m */,
+				1BC52056139B3BD40057DA66 /* MainWindow_iPhone.xib */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		1BC52059139B3BD40057DA66 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				1BC5205A139B3BD40057DA66 /* InfiniteScrollViewAppDelegate_iPad.h */,
+				1BC5205B139B3BD40057DA66 /* InfiniteScrollViewAppDelegate_iPad.m */,
+				1BC5205D139B3BD40057DA66 /* MainWindow_iPad.xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		1BC5206B139B3BD40057DA66 /* InfiniteScrollViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				1BC52072139B3BD40057DA66 /* InfiniteScrollViewTests.h */,
+				1BC52074139B3BD40057DA66 /* InfiniteScrollViewTests.m */,
+				1BC5206C139B3BD40057DA66 /* Supporting Files */,
+			);
+			path = InfiniteScrollViewTests;
+			sourceTree = "<group>";
+		};
+		1BC5206C139B3BD40057DA66 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1BC5206D139B3BD40057DA66 /* InfiniteScrollViewTests-Info.plist */,
+				1BC5206E139B3BD40057DA66 /* InfoPlist.strings */,
+				1BC52071139B3BD40057DA66 /* InfiniteScrollViewTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1BC5203B139B3BD30057DA66 /* InfiniteScrollView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BC52078139B3BD40057DA66 /* Build configuration list for PBXNativeTarget "InfiniteScrollView" */;
+			buildPhases = (
+				1BC52038139B3BD30057DA66 /* Sources */,
+				1BC52039139B3BD30057DA66 /* Frameworks */,
+				1BC5203A139B3BD30057DA66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InfiniteScrollView;
+			productName = InfiniteScrollView;
+			productReference = 1BC5203C139B3BD30057DA66 /* InfiniteScrollView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1BC52064139B3BD40057DA66 /* InfiniteScrollViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BC5207B139B3BD40057DA66 /* Build configuration list for PBXNativeTarget "InfiniteScrollViewTests" */;
+			buildPhases = (
+				1BC52060139B3BD40057DA66 /* Sources */,
+				1BC52061139B3BD40057DA66 /* Frameworks */,
+				1BC52062139B3BD40057DA66 /* Resources */,
+				1BC52063139B3BD40057DA66 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BC5206A139B3BD40057DA66 /* PBXTargetDependency */,
+			);
+			name = InfiniteScrollViewTests;
+			productName = InfiniteScrollViewTests;
+			productReference = 1BC52065139B3BD40057DA66 /* InfiniteScrollViewTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1BC52033139B3BD30057DA66 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1BC52036139B3BD30057DA66 /* Build configuration list for PBXProject "InfiniteScrollView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1BC52031139B3BD30057DA66;
+			productRefGroup = 1BC5203D139B3BD30057DA66 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1BC5203B139B3BD30057DA66 /* InfiniteScrollView */,
+				1BC52064139B3BD40057DA66 /* InfiniteScrollViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1BC5203A139B3BD30057DA66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BC5204B139B3BD40057DA66 /* InfoPlist.strings in Resources */,
+				1BC52058139B3BD40057DA66 /* MainWindow_iPhone.xib in Resources */,
+				1BC5205F139B3BD40057DA66 /* MainWindow_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BC52062139B3BD40057DA66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BC52070139B3BD40057DA66 /* InfoPlist.strings in Resources */,
+				1BC52073139B3BD40057DA66 /* InfiniteScrollViewTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BC52063139B3BD40057DA66 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BC52038139B3BD30057DA66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BC5204E139B3BD40057DA66 /* main.m in Sources */,
+				1BC52051139B3BD40057DA66 /* InfiniteScrollViewAppDelegate.m in Sources */,
+				1BC52055139B3BD40057DA66 /* InfiniteScrollViewAppDelegate_iPhone.m in Sources */,
+				1BC5205C139B3BD40057DA66 /* InfiniteScrollViewAppDelegate_iPad.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BC52060139B3BD40057DA66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BC52075139B3BD40057DA66 /* InfiniteScrollViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1BC5206A139B3BD40057DA66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BC5203B139B3BD30057DA66 /* InfiniteScrollView */;
+			targetProxy = 1BC52069139B3BD40057DA66 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1BC52049139B3BD40057DA66 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BC5204A139B3BD40057DA66 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1BC52056139B3BD40057DA66 /* MainWindow_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BC52057139B3BD40057DA66 /* en */,
+			);
+			name = MainWindow_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		1BC5205D139B3BD40057DA66 /* MainWindow_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BC5205E139B3BD40057DA66 /* en */,
+			);
+			name = MainWindow_iPad.xib;
+			sourceTree = "<group>";
+		};
+		1BC5206E139B3BD40057DA66 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BC5206F139B3BD40057DA66 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1BC52076139B3BD40057DA66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1BC52077139B3BD40057DA66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1BC52079139B3BD40057DA66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InfiniteScrollView/InfiniteScrollView-Prefix.pch";
+				INFOPLIST_FILE = "InfiniteScrollView/InfiniteScrollView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1BC5207A139B3BD40057DA66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InfiniteScrollView/InfiniteScrollView-Prefix.pch";
+				INFOPLIST_FILE = "InfiniteScrollView/InfiniteScrollView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1BC5207C139B3BD40057DA66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/InfiniteScrollView.app/InfiniteScrollView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InfiniteScrollViewTests/InfiniteScrollViewTests-Prefix.pch";
+				INFOPLIST_FILE = "InfiniteScrollViewTests/InfiniteScrollViewTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		1BC5207D139B3BD40057DA66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/InfiniteScrollView.app/InfiniteScrollView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InfiniteScrollViewTests/InfiniteScrollViewTests-Prefix.pch";
+				INFOPLIST_FILE = "InfiniteScrollViewTests/InfiniteScrollViewTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BC52036139B3BD30057DA66 /* Build configuration list for PBXProject "InfiniteScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BC52076139B3BD40057DA66 /* Debug */,
+				1BC52077139B3BD40057DA66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BC52078139B3BD40057DA66 /* Build configuration list for PBXNativeTarget "InfiniteScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BC52079139B3BD40057DA66 /* Debug */,
+				1BC5207A139B3BD40057DA66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1BC5207B139B3BD40057DA66 /* Build configuration list for PBXNativeTarget "InfiniteScrollViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BC5207C139B3BD40057DA66 /* Debug */,
+				1BC5207D139B3BD40057DA66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1BC52033139B3BD30057DA66 /* Project object */;
+}
