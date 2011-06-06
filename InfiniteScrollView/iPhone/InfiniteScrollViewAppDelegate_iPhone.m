@@ -7,8 +7,14 @@
 //
 
 #import "InfiniteScrollViewAppDelegate_iPhone.h"
+#import "RootViewController.h"
 
 @implementation InfiniteScrollViewAppDelegate_iPhone
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    return [super application:application didFinishLaunchingWithOptions:launchOptions];
+}
 
 - (void)dealloc
 {

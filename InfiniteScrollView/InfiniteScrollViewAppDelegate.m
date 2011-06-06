@@ -7,15 +7,20 @@
 //
 
 #import "InfiniteScrollViewAppDelegate.h"
+#import "RootViewController.h"
 
 @implementation InfiniteScrollViewAppDelegate
 
 
 @synthesize window=_window;
+@synthesize rootViewController=_rootViewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];
+    _rootViewController = [[RootViewController alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    [self.window setRootViewController:self.rootViewController];
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -61,6 +66,7 @@
 
 - (void)dealloc
 {
+    [_rootViewController release];
     [_window release];
     [super dealloc];
 }

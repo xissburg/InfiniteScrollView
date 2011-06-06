@@ -11,7 +11,8 @@
 int main(int argc, char *argv[])
 {
     NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-    int retVal = UIApplicationMain(argc, argv, nil, nil);
+    NSString *delegateClassName = UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPad? @"InfiniteScrollViewAppDelegate_iPad":  @"InfiniteScrollViewAppDelegate_iPhone";
+    int retVal = UIApplicationMain(argc, argv, nil, delegateClassName);
     [pool release];
     return retVal;
 }

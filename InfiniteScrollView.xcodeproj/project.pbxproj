@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B88FE3B139BC00A00531965 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B88FE3A139BC00A00531965 /* RootViewController.m */; };
+		1B88FE4F139BD8D100531965 /* InfiniteScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B88FE4E139BD8D100531965 /* InfiniteScrollView.m */; };
+		1B88FE5B139C14E900531965 /* image_0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B88FE55139C14E900531965 /* image_0.jpg */; };
+		1B88FE5C139C14E900531965 /* image_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B88FE56139C14E900531965 /* image_1.jpg */; };
+		1B88FE5D139C14E900531965 /* image_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B88FE57139C14E900531965 /* image_2.jpg */; };
+		1B88FE5E139C14E900531965 /* image_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B88FE58139C14E900531965 /* image_3.jpg */; };
+		1B88FE5F139C14E900531965 /* image_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B88FE59139C14E900531965 /* image_4.jpg */; };
+		1B88FE60139C14E900531965 /* image_5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B88FE5A139C14E900531965 /* image_5.jpg */; };
+		1B88FE62139C155500531965 /* image_10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B88FE61139C155500531965 /* image_10.jpg */; };
+		1B88FE68139C15A000531965 /* image_11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B88FE63139C15A000531965 /* image_11.jpg */; };
+		1B88FE69139C15A000531965 /* image_9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B88FE64139C15A000531965 /* image_9.jpg */; };
+		1B88FE6A139C15A000531965 /* image_6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B88FE65139C15A000531965 /* image_6.jpg */; };
+		1B88FE6B139C15A000531965 /* image_7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B88FE66139C15A000531965 /* image_7.jpg */; };
+		1B88FE6C139C15A000531965 /* image_8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B88FE67139C15A000531965 /* image_8.jpg */; };
 		1BC52041139B3BD30057DA66 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC52040139B3BD30057DA66 /* UIKit.framework */; };
 		1BC52043139B3BD30057DA66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC52042139B3BD30057DA66 /* Foundation.framework */; };
 		1BC52045139B3BD30057DA66 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC52044139B3BD30057DA66 /* CoreGraphics.framework */; };
@@ -14,9 +28,7 @@
 		1BC5204E139B3BD40057DA66 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC5204D139B3BD40057DA66 /* main.m */; };
 		1BC52051139B3BD40057DA66 /* InfiniteScrollViewAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC52050139B3BD40057DA66 /* InfiniteScrollViewAppDelegate.m */; };
 		1BC52055139B3BD40057DA66 /* InfiniteScrollViewAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC52054139B3BD40057DA66 /* InfiniteScrollViewAppDelegate_iPhone.m */; };
-		1BC52058139B3BD40057DA66 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BC52056139B3BD40057DA66 /* MainWindow_iPhone.xib */; };
 		1BC5205C139B3BD40057DA66 /* InfiniteScrollViewAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC5205B139B3BD40057DA66 /* InfiniteScrollViewAppDelegate_iPad.m */; };
-		1BC5205F139B3BD40057DA66 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BC5205D139B3BD40057DA66 /* MainWindow_iPad.xib */; };
 		1BC52066139B3BD40057DA66 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC52040139B3BD30057DA66 /* UIKit.framework */; };
 		1BC52067139B3BD40057DA66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC52042139B3BD30057DA66 /* Foundation.framework */; };
 		1BC52068139B3BD40057DA66 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC52044139B3BD30057DA66 /* CoreGraphics.framework */; };
@@ -36,26 +48,40 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B88FE39139BC00A00531965 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		1B88FE3A139BC00A00531965 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		1B88FE4D139BD8D100531965 /* InfiniteScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfiniteScrollView.h; sourceTree = "<group>"; };
+		1B88FE4E139BD8D100531965 /* InfiniteScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfiniteScrollView.m; sourceTree = "<group>"; };
+		1B88FE55139C14E900531965 /* image_0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_0.jpg; sourceTree = "<group>"; };
+		1B88FE56139C14E900531965 /* image_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_1.jpg; sourceTree = "<group>"; };
+		1B88FE57139C14E900531965 /* image_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_2.jpg; sourceTree = "<group>"; };
+		1B88FE58139C14E900531965 /* image_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_3.jpg; sourceTree = "<group>"; };
+		1B88FE59139C14E900531965 /* image_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_4.jpg; sourceTree = "<group>"; };
+		1B88FE5A139C14E900531965 /* image_5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_5.jpg; sourceTree = "<group>"; };
+		1B88FE61139C155500531965 /* image_10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_10.jpg; sourceTree = "<group>"; };
+		1B88FE63139C15A000531965 /* image_11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_11.jpg; sourceTree = "<group>"; };
+		1B88FE64139C15A000531965 /* image_9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_9.jpg; sourceTree = "<group>"; };
+		1B88FE65139C15A000531965 /* image_6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_6.jpg; sourceTree = "<group>"; };
+		1B88FE66139C15A000531965 /* image_7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_7.jpg; sourceTree = "<group>"; };
+		1B88FE67139C15A000531965 /* image_8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_8.jpg; sourceTree = "<group>"; };
 		1BC5203C139B3BD30057DA66 /* InfiniteScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfiniteScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BC52040139B3BD30057DA66 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1BC52042139B3BD30057DA66 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1BC52044139B3BD30057DA66 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		1BC52048139B3BD40057DA66 /* InfiniteScrollView-Info.plist */ = {isa = PBXFileReference; path = "InfiniteScrollView-Info.plist"; sourceTree = "<group>"; };
+		1BC52048139B3BD40057DA66 /* InfiniteScrollView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InfiniteScrollView-Info.plist"; sourceTree = "<group>"; };
 		1BC5204A139B3BD40057DA66 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1BC5204C139B3BD40057DA66 /* InfiniteScrollView-Prefix.pch */ = {isa = PBXFileReference; path = "InfiniteScrollView-Prefix.pch"; sourceTree = "<group>"; };
+		1BC5204C139B3BD40057DA66 /* InfiniteScrollView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InfiniteScrollView-Prefix.pch"; sourceTree = "<group>"; };
 		1BC5204D139B3BD40057DA66 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1BC5204F139B3BD40057DA66 /* InfiniteScrollViewAppDelegate.h */ = {isa = PBXFileReference; path = InfiniteScrollViewAppDelegate.h; sourceTree = "<group>"; };
+		1BC5204F139B3BD40057DA66 /* InfiniteScrollViewAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfiniteScrollViewAppDelegate.h; sourceTree = "<group>"; };
 		1BC52050139B3BD40057DA66 /* InfiniteScrollViewAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfiniteScrollViewAppDelegate.m; sourceTree = "<group>"; };
-		1BC52053139B3BD40057DA66 /* InfiniteScrollViewAppDelegate_iPhone.h */ = {isa = PBXFileReference; name = InfiniteScrollViewAppDelegate_iPhone.h; path = iPhone/InfiniteScrollViewAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		1BC52053139B3BD40057DA66 /* InfiniteScrollViewAppDelegate_iPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = InfiniteScrollViewAppDelegate_iPhone.h; path = iPhone/InfiniteScrollViewAppDelegate_iPhone.h; sourceTree = "<group>"; };
 		1BC52054139B3BD40057DA66 /* InfiniteScrollViewAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = InfiniteScrollViewAppDelegate_iPhone.m; path = iPhone/InfiniteScrollViewAppDelegate_iPhone.m; sourceTree = "<group>"; };
-		1BC52057139B3BD40057DA66 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
-		1BC5205A139B3BD40057DA66 /* InfiniteScrollViewAppDelegate_iPad.h */ = {isa = PBXFileReference; name = InfiniteScrollViewAppDelegate_iPad.h; path = iPad/InfiniteScrollViewAppDelegate_iPad.h; sourceTree = "<group>"; };
+		1BC5205A139B3BD40057DA66 /* InfiniteScrollViewAppDelegate_iPad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = InfiniteScrollViewAppDelegate_iPad.h; path = iPad/InfiniteScrollViewAppDelegate_iPad.h; sourceTree = "<group>"; };
 		1BC5205B139B3BD40057DA66 /* InfiniteScrollViewAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = InfiniteScrollViewAppDelegate_iPad.m; path = iPad/InfiniteScrollViewAppDelegate_iPad.m; sourceTree = "<group>"; };
-		1BC5205E139B3BD40057DA66 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
 		1BC52065139B3BD40057DA66 /* InfiniteScrollViewTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfiniteScrollViewTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1BC5206D139B3BD40057DA66 /* InfiniteScrollViewTests-Info.plist */ = {isa = PBXFileReference; path = "InfiniteScrollViewTests-Info.plist"; sourceTree = "<group>"; };
+		1BC5206D139B3BD40057DA66 /* InfiniteScrollViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InfiniteScrollViewTests-Info.plist"; sourceTree = "<group>"; };
 		1BC5206F139B3BD40057DA66 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1BC52071139B3BD40057DA66 /* InfiniteScrollViewTests-Prefix.pch */ = {isa = PBXFileReference; path = "InfiniteScrollViewTests-Prefix.pch"; sourceTree = "<group>"; };
+		1BC52071139B3BD40057DA66 /* InfiniteScrollViewTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InfiniteScrollViewTests-Prefix.pch"; sourceTree = "<group>"; };
 		1BC52072139B3BD40057DA66 /* InfiniteScrollViewTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfiniteScrollViewTests.h; sourceTree = "<group>"; };
 		1BC52074139B3BD40057DA66 /* InfiniteScrollViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfiniteScrollViewTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,11 +110,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B88FE50139C140A00531965 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1B88FE63139C15A000531965 /* image_11.jpg */,
+				1B88FE64139C15A000531965 /* image_9.jpg */,
+				1B88FE65139C15A000531965 /* image_6.jpg */,
+				1B88FE66139C15A000531965 /* image_7.jpg */,
+				1B88FE67139C15A000531965 /* image_8.jpg */,
+				1B88FE61139C155500531965 /* image_10.jpg */,
+				1B88FE55139C14E900531965 /* image_0.jpg */,
+				1B88FE56139C14E900531965 /* image_1.jpg */,
+				1B88FE57139C14E900531965 /* image_2.jpg */,
+				1B88FE58139C14E900531965 /* image_3.jpg */,
+				1B88FE59139C14E900531965 /* image_4.jpg */,
+				1B88FE5A139C14E900531965 /* image_5.jpg */,
+			);
+			name = Resources;
+			path = InfiniteScrollView;
+			sourceTree = "<group>";
+		};
 		1BC52031139B3BD30057DA66 = {
 			isa = PBXGroup;
 			children = (
 				1BC52046139B3BD30057DA66 /* InfiniteScrollView */,
 				1BC5206B139B3BD40057DA66 /* InfiniteScrollViewTests */,
+				1B88FE50139C140A00531965 /* Resources */,
 				1BC5203F139B3BD30057DA66 /* Frameworks */,
 				1BC5203D139B3BD30057DA66 /* Products */,
 			);
@@ -116,6 +163,10 @@
 		1BC52046139B3BD30057DA66 /* InfiniteScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				1B88FE4D139BD8D100531965 /* InfiniteScrollView.h */,
+				1B88FE4E139BD8D100531965 /* InfiniteScrollView.m */,
+				1B88FE39139BC00A00531965 /* RootViewController.h */,
+				1B88FE3A139BC00A00531965 /* RootViewController.m */,
 				1BC5204F139B3BD40057DA66 /* InfiniteScrollViewAppDelegate.h */,
 				1BC52050139B3BD40057DA66 /* InfiniteScrollViewAppDelegate.m */,
 				1BC52052139B3BD40057DA66 /* iPhone */,
@@ -141,7 +192,6 @@
 			children = (
 				1BC52053139B3BD40057DA66 /* InfiniteScrollViewAppDelegate_iPhone.h */,
 				1BC52054139B3BD40057DA66 /* InfiniteScrollViewAppDelegate_iPhone.m */,
-				1BC52056139B3BD40057DA66 /* MainWindow_iPhone.xib */,
 			);
 			name = iPhone;
 			sourceTree = "<group>";
@@ -151,7 +201,6 @@
 			children = (
 				1BC5205A139B3BD40057DA66 /* InfiniteScrollViewAppDelegate_iPad.h */,
 				1BC5205B139B3BD40057DA66 /* InfiniteScrollViewAppDelegate_iPad.m */,
-				1BC5205D139B3BD40057DA66 /* MainWindow_iPad.xib */,
 			);
 			name = iPad;
 			sourceTree = "<group>";
@@ -244,8 +293,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BC5204B139B3BD40057DA66 /* InfoPlist.strings in Resources */,
-				1BC52058139B3BD40057DA66 /* MainWindow_iPhone.xib in Resources */,
-				1BC5205F139B3BD40057DA66 /* MainWindow_iPad.xib in Resources */,
+				1B88FE5B139C14E900531965 /* image_0.jpg in Resources */,
+				1B88FE5C139C14E900531965 /* image_1.jpg in Resources */,
+				1B88FE5D139C14E900531965 /* image_2.jpg in Resources */,
+				1B88FE5E139C14E900531965 /* image_3.jpg in Resources */,
+				1B88FE5F139C14E900531965 /* image_4.jpg in Resources */,
+				1B88FE60139C14E900531965 /* image_5.jpg in Resources */,
+				1B88FE62139C155500531965 /* image_10.jpg in Resources */,
+				1B88FE68139C15A000531965 /* image_11.jpg in Resources */,
+				1B88FE69139C15A000531965 /* image_9.jpg in Resources */,
+				1B88FE6A139C15A000531965 /* image_6.jpg in Resources */,
+				1B88FE6B139C15A000531965 /* image_7.jpg in Resources */,
+				1B88FE6C139C15A000531965 /* image_8.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +344,8 @@
 				1BC52051139B3BD40057DA66 /* InfiniteScrollViewAppDelegate.m in Sources */,
 				1BC52055139B3BD40057DA66 /* InfiniteScrollViewAppDelegate_iPhone.m in Sources */,
 				1BC5205C139B3BD40057DA66 /* InfiniteScrollViewAppDelegate_iPad.m in Sources */,
+				1B88FE3B139BC00A00531965 /* RootViewController.m in Sources */,
+				1B88FE4F139BD8D100531965 /* InfiniteScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,22 +374,6 @@
 				1BC5204A139B3BD40057DA66 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		1BC52056139B3BD40057DA66 /* MainWindow_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1BC52057139B3BD40057DA66 /* en */,
-			);
-			name = MainWindow_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		1BC5205D139B3BD40057DA66 /* MainWindow_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1BC5205E139B3BD40057DA66 /* en */,
-			);
-			name = MainWindow_iPad.xib;
 			sourceTree = "<group>";
 		};
 		1BC5206E139B3BD40057DA66 /* InfoPlist.strings */ = {
@@ -467,6 +512,7 @@
 				1BC5207A139B3BD40057DA66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1BC5207B139B3BD40057DA66 /* Build configuration list for PBXNativeTarget "InfiniteScrollViewTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +521,7 @@
 				1BC5207D139B3BD40057DA66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
