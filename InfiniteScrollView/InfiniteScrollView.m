@@ -85,8 +85,6 @@
     UIView *rightmostView = [self.scrollSubviews lastObject];
     
     if (self.scrollView.contentOffset.x < leftmostView.frame.origin.x) {
-        NSLog(@"contentOffset.x=%.1f", self.scrollView.contentOffset.x);
-        NSLog(@"leftmostView.frame.origin.x=%.1f", leftmostView.frame.origin.x);
         CGRect f = rightmostView.frame;
         f.origin.x = leftmostView.frame.origin.x - rightmostView.frame.size.width;
         rightmostView.frame = f;
