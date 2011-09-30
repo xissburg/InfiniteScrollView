@@ -10,9 +10,10 @@
 
 
 @interface InfiniteScrollView : UIView <UIScrollViewDelegate> {
-    
+    UIScrollView *_scrollView;
+    NSArray *_contentViews;
 }
 
-- (id)initWithFrame:(CGRect)frame subviews:(NSArray *)subviews;
+@property (nonatomic, assign) CGSize contentSize;
 
 @end

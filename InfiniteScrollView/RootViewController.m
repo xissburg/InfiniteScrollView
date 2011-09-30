@@ -16,34 +16,20 @@ UIImage* ResizeImagePreserve(UIImage *image, NSUInteger width, NSUInteger height
 
 @implementation RootViewController
 
-- (id)initWithFrame:(CGRect)frame
+@synthesize infiniteScrollView=_infiniteScrollView;
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithNibName:nil bundle:nil];
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.view.backgroundColor = [UIColor lightGrayColor];
         
-        NSMutableArray *subviews = [NSMutableArray array];
-        NSString *imagePath = nil;
-        NSUInteger i = 0;
-        
-        while ((imagePath = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"image_%d", i++] ofType:@"jpg"])) {
-            UIImage *image = [UIImage imageWithContentsOfFile:imagePath];
-            image = ResizeImagePreserve(image, 256, 256);
-            UIImageView *imageView = [[[UIImageView alloc] initWithImage:image] autorelease];
-            imageView.frame = CGRectMake(0, 0, image.size.width, image.size.height);
-            [subviews addObject:imageView];
-        }
-        
-        infiniteScrollView = [[InfiniteScrollView alloc] initWithFrame:frame subviews:subviews];
-        //infiniteScrollView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-        [self.view addSubview:infiniteScrollView];
     }
     return self;
 }
 
 - (void)dealloc
 {
-    [infiniteScrollView release];
+    self.infiniteScrollView = nil;
     [super dealloc];
 }
 
@@ -57,28 +43,52 @@ UIImage* ResizeImagePreserve(UIImage *image, NSUInteger width, NSUInteger height
 
 #pragma mark - View lifecycle
 
-
-- (void)loadView
-{
-    UIView *view = [[UIView alloc] initWithFrame:CGRectZero];
-    self.view = view;
-    [view release];
-}
-
-
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.view.backgroundColor = [UIColor lightGrayColor];
+    self.infiniteScrollView = [[[InfiniteScrollView alloc] initWithFrame:self.view.frame] autorelease];
+    
+    NSString *imagePath = nil;
+    NSUInteger i = 0;
+    CGSize contentSize = CGSizeZero;
+    
+    while ((imagePath = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"image_%d", i++] ofType:@"jpg"])) {
+        UIImage *image = [UIImage imageWithContentsOfFile:imagePath];
+        image = ResizeImagePreserve(image, 256, 256);
+        UIImageView *imageView = [[[UIImageView alloc] initWithImage:image] autorelease];
+        imageView.frame = CGRectMake(contentSize.width, 0, image.size.width, image.size.height);
+        [self.infiniteScrollView addSubview:imageView];
+        
+        contentSize.width += imageView.frame.size.width;
+        
+        if (imageView.frame.size.height > contentSize.height) {
+            contentSize.height = imageView.frame.size.height;
+        }
+    }
+    
+    UIWebView *webView = [[[UIWebView alloc] initWithFrame:CGRectMake(contentSize.width, 0, 384, 256)] autorelease];
+    webView.scalesPageToFit = YES;
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://xissburg.com"]]];
+    [self.infiniteScrollView addSubview:webView];
+    
+    contentSize.width += webView.frame.size.width;
+    
+    if (webView.frame.size.height > contentSize.height) {
+        contentSize.height = webView.frame.size.height;
+    }
+    
+    self.infiniteScrollView.contentSize = contentSize;
+    
+    //infiniteScrollView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+    [self.view addSubview:self.infiniteScrollView];
 }
-*/
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+    self.infiniteScrollView = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

@@ -13,7 +13,7 @@
 
 @property (nonatomic, retain) UIScrollView *scrollView;
 @property (nonatomic, retain) NSMutableArray *scrollSubviews;
-@property (nonatomic, assign) CGSize actualContentSize;
+@property (nonatomic, retain) NSArray *contentViews;
 
 @end
 
@@ -22,22 +22,26 @@
 
 @synthesize scrollView=_scrollView;
 @synthesize scrollSubviews=_scrollSubviews;
-@synthesize actualContentSize;
+@synthesize contentViews=_contentViews;
 
-
-- (id)initWithFrame:(CGRect)frame subviews:(NSArray *)subviews
+- (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.scrollSubviews = [NSMutableArray arrayWithArray:subviews];
+        self.scrollSubviews = [NSMutableArray array];
         
-        UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:frame];
-        self.scrollView = scrollView;
-        [scrollView release];
-        
-        [self addSubview:self.scrollView];
+        self.scrollView = [[[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)] autorelease];
+        [super addSubview:self.scrollView];//NOTICE THE super. addSubview: is overriden in this class.
         self.scrollView.delegate = self;
         self.scrollView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+        
+        self.contentViews = [NSArray arrayWithObjects:[[[UIView alloc] initWithFrame:CGRectZero] autorelease], [[[UIView alloc] initWithFrame:CGRectZero] autorelease], [[[UIView alloc] initWithFrame:CGRectZero] autorelease], [[[UIView alloc] initWithFrame:CGRectZero] autorelease], nil];
+        
+        for (UIView *contentView in self.contentViews) {
+            [self.scrollView addSubview:contentView];
+        }
+        
+        
         
         
         CGSize contentSize = CGSizeMake(100000, 0);
@@ -56,13 +60,9 @@
             }
         }
         
-        actualContentSize = CGSizeMake(x, contentSize.height);
-        
-        self.scrollView.contentSize = contentSize;
-        
-        CGPoint o = self.scrollView.contentOffset;
-        o.x = contentSize.width/2;
-        self.scrollView.contentOffset = o;
+        CGFloat size = 1<<24;
+        self.scrollView.contentSize = CGSizeMake(size, size);
+        self.scrollView.contentOffset = CGPointMake(size/2, size/2);
     }
     return self;
 }
@@ -72,7 +72,32 @@
 {
     self.scrollSubviews = nil;
     self.scrollView = nil;
+    self.contentViews = nil;
     [super dealloc];
+}
+
+
+#pragma mark - Properties
+
+- (CGSize)contentSize
+{
+    return [[self.contentViews objectAtIndex:0] frame].size;
+}
+
+- (void)setContentSize:(CGSize)contentSize
+{
+    for (UIView *contentView in self.contentViews) {
+        CGRect r = contentView.frame;
+        r.size = contentSize;
+        contentView.frame = r;
+    }
+}
+
+#pragma mark - Overrides
+
+- (void)addSubview:(UIView *)view
+{
+    [[self.contentViews objectAtIndex:0] addSubview:view];
 }
 
 
@@ -81,23 +106,7 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    UIView *leftmostView = [self.scrollSubviews objectAtIndex:0];
-    UIView *rightmostView = [self.scrollSubviews lastObject];
-    
-    if (self.scrollView.contentOffset.x < leftmostView.frame.origin.x) {
-        CGRect f = rightmostView.frame;
-        f.origin.x = leftmostView.frame.origin.x - rightmostView.frame.size.width;
-        rightmostView.frame = f;
-        [self.scrollSubviews removeLastObject];
-        [self.scrollSubviews insertObject:rightmostView atIndex:0];
-    }
-    else if(self.scrollView.contentOffset.x + self.scrollView.frame.size.width > rightmostView.frame.origin.x + rightmostView.frame.size.width) {
-        CGRect f = leftmostView.frame;
-        f.origin.x = rightmostView.frame.origin.x + rightmostView.frame.size.width;
-        leftmostView.frame = f;
-        [self.scrollSubviews removeObjectAtIndex:0];
-        [self.scrollSubviews addObject:leftmostView];
-    }
+
 }
 
 

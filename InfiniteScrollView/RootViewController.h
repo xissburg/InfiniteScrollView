@@ -11,9 +11,9 @@
 @class InfiniteScrollView;
 
 @interface RootViewController : UIViewController {
-    InfiniteScrollView *infiniteScrollView;
+    InfiniteScrollView *_infiniteScrollView;
 }
 
-- (id)initWithFrame:(CGRect)frame;
+@property (nonatomic, retain) InfiniteScrollView *infiniteScrollView;
 
 @end
